@@ -38,41 +38,34 @@ It combines:
 
 ## 🏗️ Project Structure
 
-
+```bash
 Quantum-Safe-Communication/
 │
-├── client/ # Client communication
-├── server/ # Server communication
-├── crypto/ # Encryption & HMAC logic
-├── file_security/ # File handling
-├── analysis/ # Graphs & logs
-├── gui/ # GUI (optional)
-├── images/ # Screenshots
+├── client/           # Client-side communication
+├── server/           # Server-side communication
+├── crypto/           # Encryption & HMAC logic
+├── file_security/    # Secure file handling modules
+├── analysis/         # Logs & performance graphs
+├── gui/              # GUI (optional extension)
+├── images/           # Screenshots & outputs
 ├── README.md
 └── requirements.txt
-
-
----
-
-## 🚀 How to Run
-
-### 1️⃣ Open Project Folder
-
-```bash
+🚀 How to Run
+🔹 Step 1: Navigate to Project Directory
 cd "D:\Final year project\Quantum-Safe-Communication"
-2️⃣ Start Server
+🔹 Step 2: Start Secure Server
 python -m server.server
-3️⃣ Start Client (New Terminal)
+🔹 Step 3: Start Client (New Terminal)
 python -m client.client
 🔐 Encryption Workflow
 Client → Encrypt → HMAC → Send → Verify → Decrypt → Server
-Steps:
-🔑 Session key generated
-🔒 Message encrypted (AES)
-🛡️ HMAC generated
-🌐 Sent via socket
-✅ Verified on server
-🔓 Decrypted securely
+🔄 Process Flow
+🔑 Session key generated securely
+🔒 Message encrypted using AES (Fernet)
+🛡️ HMAC created for integrity verification
+🌐 Data transmitted via socket
+✅ Server verifies HMAC (tamper detection)
+🔓 Message decrypted securely
 📊 Performance Analysis
 🔹 RSA vs AES Comparison
 Metric	RSA	AES (System)
@@ -81,50 +74,46 @@ Decryption Time	High	Very Low
 Efficiency	Low	High
 
 👉 AES is significantly faster than RSA
-👉 Hybrid approach ensures security + performance
+👉 Hybrid model ensures both performance & security
 
 🔹 Message Size Distribution
-Shows randomness of encrypted data
-Confirms strong encryption behavior
-Demonstrates scalability
+📈 Shows randomness of encrypted data
+🔐 Confirms strong encryption behavior
+⚡ Demonstrates scalability with increasing data size
 🔹 Logging System
-Real-time data stored in log.csv
-Used for performance graphs
-Helps in research analysis
+🧾 Real-time data stored in log.csv
+📊 Used for performance graphs
+🔍 Enables statistical analysis
 🛡️ Security Architecture
-
 ✔ End-to-End Encryption
-✔ HMAC Integrity Verification
-✔ Tamper Detection
-✔ Session Key Security
+✔ HMAC-SHA256 Integrity Verification
+✔ Tamper Detection Mechanism
+✔ Secure Session Key Exchange
 ✔ Protection against Data Manipulation
-
 📈 Results
-AES is faster than RSA
-System detects tampered messages
-Secure file transfer works correctly
-Graphs validate system performance
+⚡ AES is significantly faster than RSA
+🛡️ System successfully detects tampered messages
+📁 Secure file transfer without data corruption
+📊 Graphs validate system performance
 🎯 Applications
-
-🔹 Secure Messaging Systems
-🔹 Military Communication
-🔹 IoT Security
-🔹 Cloud Encryption
-🔹 Post-Quantum Research
-
+🔐 Secure Messaging Systems
+🪖 Military & Defense Communication
+🌐 IoT Security
+☁️ Cloud Data Protection
+🔬 Post-Quantum Cryptography Research
 📚 Tech Stack
-Technology	Use
-Python	Core
-Socket	Communication
+Technology	Purpose
+Python	Core Development
+Socket	Network Communication
 Fernet	AES Encryption
-HMAC	Integrity
-Matplotlib	Graphs
+HMAC	Integrity Verification
+Matplotlib	Data Visualization
 🚀 Future Scope
-Real PQC (Kyber, FrodoKEM)
-GUI Chat Application
-Multi-user support
-TLS/SSL integration
-Blockchain logging
+🔹 Integration with Real PQC (Kyber, FrodoKEM)
+🔹 GUI-based Chat Application
+🔹 Multi-client Communication
+🔹 TLS/SSL Secure Channel
+🔹 Blockchain-based Logging
 👨‍💻 Author
 
 Arun
@@ -135,6 +124,6 @@ Arun
 
 If you like this project:
 
-⭐ Star this repo
-🍴 Fork it
-📢 Share
+⭐ Star this repository
+🍴 Fork and enhance
+📢 Share with others
