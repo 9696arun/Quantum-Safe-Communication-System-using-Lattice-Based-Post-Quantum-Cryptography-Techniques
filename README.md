@@ -38,7 +38,7 @@ It combines:
 
 ## 🏗️ Project Structure
 
-```bash
+```
 Quantum-Safe-Communication/
 │
 ├── client/           # Client-side communication
@@ -50,6 +50,9 @@ Quantum-Safe-Communication/
 ├── images/           # Screenshots & outputs
 ├── README.md
 └── requirements.txt
+
+---
+
 🚀 How to Run
 🔹 Step 1: Navigate to Project Directory
 cd "D:\Final year project\Quantum-Safe-Communication"
@@ -57,6 +60,8 @@ cd "D:\Final year project\Quantum-Safe-Communication"
 python -m server.server
 🔹 Step 3: Start Client (New Terminal)
 python -m client.client
+
+---
 🔐 Encryption Workflow
 Client → Encrypt → HMAC → Send → Verify → Decrypt → Server
 🔄 Process Flow
@@ -75,7 +80,7 @@ Efficiency	Low	High
 
 👉 AES is significantly faster than RSA
 👉 Hybrid model ensures both performance & security
-
+---
 🔹 Message Size Distribution
 📈 Shows randomness of encrypted data
 🔐 Confirms strong encryption behavior
@@ -84,12 +89,15 @@ Efficiency	Low	High
 🧾 Real-time data stored in log.csv
 📊 Used for performance graphs
 🔍 Enables statistical analysis
+---
 🛡️ Security Architecture
 ✔ End-to-End Encryption
 ✔ HMAC-SHA256 Integrity Verification
 ✔ Tamper Detection Mechanism
 ✔ Secure Session Key Exchange
 ✔ Protection against Data Manipulation
+
+---
 📈 Results
 ⚡ AES is significantly faster than RSA
 🛡️ System successfully detects tampered messages
@@ -102,18 +110,23 @@ Efficiency	Low	High
 ☁️ Cloud Data Protection
 🔬 Post-Quantum Cryptography Research
 📚 Tech Stack
+---
 Technology	Purpose
 Python	Core Development
 Socket	Network Communication
 Fernet	AES Encryption
 HMAC	Integrity Verification
 Matplotlib	Data Visualization
+
+---
 🚀 Future Scope
 🔹 Integration with Real PQC (Kyber, FrodoKEM)
 🔹 GUI-based Chat Application
 🔹 Multi-client Communication
 🔹 TLS/SSL Secure Channel
 🔹 Blockchain-based Logging
+
+---
 👨‍💻 Author
 
 Arun
