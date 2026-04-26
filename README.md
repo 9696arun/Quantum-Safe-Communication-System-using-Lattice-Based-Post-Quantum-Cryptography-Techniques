@@ -1,31 +1,33 @@
 # 🔐 Quantum-Safe Communication System using Lattice-Based Post-Quantum Cryptography
 
-🚀 A secure communication system designed to resist future quantum attacks using hybrid cryptographic techniques (PQC + AES + HMAC).
+🚀 A next-generation secure communication system designed to resist future quantum attacks using hybrid cryptographic techniques (PQC + AES + HMAC).
 
 ---
 
 ## 📌 Overview
 
-This project implements a **Quantum-Safe Secure Communication System** using:
+This project implements a **Quantum-Safe Secure Communication System** combining:
 
-- 🔐 Symmetric Encryption (AES - Fernet)
-- 🧠 Post-Quantum Concepts (Simulated PQC)
-- 🛡️ Integrity Verification (HMAC-SHA256)
-- 🌐 Socket-based Secure Communication
-- 📁 Secure File Transfer Support
+- 🔐 AES-based Encryption (Fernet)
+- 🧠 Post-Quantum Cryptography (Simulated PQC)
+- 🛡️ HMAC-SHA256 Integrity Verification
+- 🌐 Secure Socket Communication
+- 📁 Encrypted File Transfer
 - 📊 Performance Analysis & Visualization
 
 ---
 
-## ⚙️ Features
+## ⚙️ Key Features
 
 ✔ Secure real-time client-server communication  
 ✔ End-to-end encrypted messaging  
-✔ File transfer with encryption + integrity check  
+✔ Secure file transfer with encryption + integrity check  
 ✔ HMAC-based tamper detection  
-✔ Message size logging for analysis  
-✔ Performance comparison (RSA vs AES)  
-✔ Data visualization using matplotlib  
+✔ Attack simulation (tampered data detection)  
+✔ Session-based encryption (optimized performance)  
+✔ Logging system for data analysis  
+✔ RSA vs AES performance comparison  
+✔ Graph-based visualization (matplotlib)
 
 ---
 
@@ -33,104 +35,113 @@ This project implements a **Quantum-Safe Secure Communication System** using:
 
 
 Quantum-Safe-Communication/
-├── client/
-├── server/
-├── crypto/
-├── analysis/
-├── file_security/
-├── gui/
-├── images/
-├── main.tex
-└── README.md
+│
+├── client/ # Client-side communication
+├── server/ # Server-side communication
+├── crypto/ # Encryption & HMAC logic
+├── file_security/ # File handling modules
+├── analysis/ # Graphs & performance analysis
+├── gui/ # GUI (optional extension)
+├── README.md
+└── requirements.txt
 
 
 ---
 
 ## 🚀 How to Run
 
-### Step 1: Navigate to project folder
+### 🔹 Step 1: Open Project Folder
+
 ```bash
 cd "D:\Final year project\Quantum-Safe-Communication"
-Step 2: Start Server
+🔹 Step 2: Start Server
 python -m server.server
-Step 3: Start Client (New Terminal)
+🔹 Step 3: Start Client (New Terminal)
 python -m client.client
 🔐 Encryption Workflow
-Session key generated using AES
-Message encrypted using Fernet
-HMAC generated for integrity
-Data transmitted via socket
-Server verifies HMAC
-Message decrypted securely
+Client → Encrypt → HMAC → Send → Verify → Decrypt → Server
+🔄 Steps:
+🔑 Session key generated (AES)
+🔒 Message encrypted using Fernet
+🛡️ HMAC generated for integrity
+🌐 Sent over socket
+✅ Server verifies HMAC
+🔓 Message decrypted
 📊 Performance Analysis
 🔹 RSA vs AES Comparison
+Metric	RSA	AES (System)
+Encryption Time	High	Very Low
+Decryption Time	High	Very Low
+Efficiency	Low	High
 
-👉 AES significantly outperforms RSA in speed and efficiency
-👉 RSA is used for secure key exchange
+📌 Conclusion:
 
+AES is faster and suitable for real-time systems
+RSA/PQC is used for secure key exchange
+Hybrid approach ensures best performance + security
 🔹 Message Size Distribution
 
-👉 Shows distribution of encrypted message sizes
-👉 Demonstrates randomness and scalability
+📌 Insights:
 
-🔹 Dataset Logging
+Encrypted sizes vary due to padding/randomization
+Shows unpredictability (strong security)
+System scales well with large data
+🔹 Log-Based Analysis
+Real-time message sizes stored in log.csv
+Used for statistical and graphical analysis
+Helps validate system performance
+🛡️ Security Architecture
 
-👉 CSV logs used for statistical analysis
-👉 Captures message sizes during communication
-
-🔹 Secure Communication Output
-
-👉 Shows encryption, HMAC verification, and decryption
-👉 Demonstrates system reliability and security
-
-🛡️ Security Features
 ✔ End-to-End Encryption
-✔ HMAC-based Integrity Check
+✔ HMAC-SHA256 Integrity Verification
 ✔ Tamper Detection
 ✔ Secure Session Key Exchange
-✔ Protection against replay & modification attacks
-📈 Results
-AES provides faster encryption/decryption than RSA
-System detects tampered messages successfully
-Secure file transfer works without data corruption
-Message size distribution confirms encryption randomness
+✔ Protection against Data Manipulation
+✔ Attack Simulation Support
+
+📈 Experimental Results
+AES encryption significantly faster than RSA
+System detects tampering successfully
+File transfer is secure and verified
+Performance improves with session-based encryption
 🎯 Applications
-Secure Messaging Systems
-Military Communication
-IoT Security
-Cloud Data Protection
-Post-Quantum Cryptography Research
-📚 Technologies Used
-Python 3
-Socket Programming
-Cryptography (Fernet)
-HMAC (SHA-256)
-Matplotlib
-🧠 Future Improvements
-🔹 Real PQC (Kyber / FrodoKEM integration)
-🔹 TLS-based secure communication
-🔹 GUI Chat Interface
-🔹 Multi-client support
-🔹 Blockchain-based logging
+
+🔹 Secure Messaging Systems
+🔹 Military Communication
+🔹 IoT Security
+🔹 Cloud Encryption
+🔹 Quantum-Safe Cybersecurity
+
+🧠 Technologies Used
+Technology	Purpose
+Python 3	Core Development
+Socket Programming	Network Communication
+Cryptography (Fernet)	AES Encryption
+HMAC (SHA-256)	Integrity Verification
+Matplotlib	Data Visualization
+🚀 Future Scope
+
+🚀 Real PQC Algorithms (Kyber, FrodoKEM)
+🚀 GUI Chat Application
+🚀 Multi-user Chat System
+🚀 TLS/SSL Integration
+🚀 Blockchain-based Logging
+🚀 Cloud Deployment
+
 👨‍💻 Author
 
 Arun
-B.Tech CSE Final Year
-Rajkiya Engineering College Kannauj
+🎓 B.Tech CSE Final Year
+🏫 Rajkiya Engineering College Kannauj
 
 ⭐ Support
 
 If you like this project:
 
 ⭐ Star this repository
-🍴 Fork it
+🍴 Fork and improve
 📢 Share with others
 
 📌 License
 
-This project is for academic and research purposes.
-
-
----
-
-# 🚀 FINAL STEP (IMPORTANT)
+This project is for academic and research purposes only.
