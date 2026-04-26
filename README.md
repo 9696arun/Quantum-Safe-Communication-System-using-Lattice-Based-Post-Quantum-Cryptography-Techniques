@@ -64,6 +64,8 @@ python -m client.client
 ---
 🔐 Encryption Workflow
 Client → Encrypt → HMAC → Send → Verify → Decrypt → Server
+
+---
 🔄 Process Flow
 🔑 Session key generated securely
 🔒 Message encrypted using AES (Fernet)
@@ -71,6 +73,8 @@ Client → Encrypt → HMAC → Send → Verify → Decrypt → Server
 🌐 Data transmitted via socket
 ✅ Server verifies HMAC (tamper detection)
 🔓 Message decrypted securely
+
+---
 📊 Performance Analysis
 🔹 RSA vs AES Comparison
 Metric	RSA	AES (System)
