@@ -120,10 +120,4 @@ Arun
 🎓 B.Tech CSE
 🏫 Rajkiya Engineering College Kannauj
 
-⭐ Support
 
-If you like this project:
-
-⭐ Star this repository
-🍴 Fork and enhance
-📢 Share with others
